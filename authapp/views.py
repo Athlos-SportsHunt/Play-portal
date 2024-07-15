@@ -10,7 +10,7 @@ def profile(request):
 
     user_data = {
         "user_id": auth0_user.uid,
-        "name": auth0_user.first_name,
+        # "name": auth0_user.first_name,
         "picture": auth0_user.extra_data["picture"],
     }
 

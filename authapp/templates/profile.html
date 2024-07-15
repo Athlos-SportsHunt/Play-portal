@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Profile</h1>
+    <img src="{{ auth0_user.extra_data.picture }}" alt="img">
+    {{ user_data }}
+{% endblock %}
