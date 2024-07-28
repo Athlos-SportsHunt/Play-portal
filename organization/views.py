@@ -56,4 +56,8 @@ def category_form(req, tournament_id):
             return redirect("org:index")
     return render(req, "organization/create_category.html", {"tournament_id": tournament_id})
 
+def category_display(req):
+    records = Category.objects.all()
+    return render(req, 'organization/category_view.html', {'records' : records})
+
  

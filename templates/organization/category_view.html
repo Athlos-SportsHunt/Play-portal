@@ -1,0 +1,15 @@
+<html>
+{%extends "base.html" %}
+
+<title> Categories </title> 
+
+{%block body%}
+{% for record in records %}
+
+<h1> { record.name }</h1>
+<h2> { record.details }</h2>
+<li> Rs. { record.price }</li>
+<h4> { record.registration_status }</h4>
+{% endfor %}
+
+{%endblock%}
